@@ -24,43 +24,13 @@ export default function Home({data}) {
       </header>
 
       <main className={styles.main}>
-        {data.map((ev) => (
-          <a key={ev.id} href={`/events/${ev.id}`}>
-            <Image width={200} height={200} alt={ev.id} src={ev.image}/>
-            <h2>{ev.title}</h2><p>{ev.description}</p>
+        {data.map((t) => (
+          <a key={t.id} href={`/tourist-sites/${t.id}`}>
+            <Image width={200} height={200} alt={t.id} src={t.image}/>
+            <h2>{t.title}</h2><p>{t.description}</p>
           </a>
 
         ))}
-         <a href="/">
-            <img />
-            <h2>Tourist Sites in Eastern Region</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-              molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-              numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-             optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-             obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,</p>
-         </a>
-         <a href="/">
-            <img />
-            <h2>Tourist Sites in Central Region</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-              molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-              numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-             optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-             obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,</p>
-         </a>
-         <a href="/">
-            <img />
-            <h2>Tourist Sites in Ashanti Region</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-              molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-              numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-             optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-             obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,</p>
-         </a>
       </main>
     </>
   )

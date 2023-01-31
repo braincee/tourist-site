@@ -1,25 +1,30 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
-const Events = () => {
+const Tourists = ({data}) => {
   return (
     <div>
         <h1>Tourist Site Pages</h1>
         <div>
-        <a href="/">
-            <img />
-            <h2>Tourist Sites in Eastern Region</h2>
-         </a>
-         <a href="/">
-            <img />
-            <h2>Tourist Sites in Central Region</h2>
-         </a>
-         <a href="/">
-            <img />
-            <h2>Tourist Sites in Ashanti Region</h2>
-         </a>
+         {data.map((t) => (
+            <a key={t.id} href={`/tourist-sites/${t.id}`}>
+               <Image src={t.image} alt={t.image} width={300} height={300}/>
+               <h2>{t.title}</h2>
+            </a>
+         ))}
         </div>
     </div>
   )
 }
 
-export default Events
+export default Tourists;
+
+export async function getStaticProps() {
+   const { tourist_sites} = await import('data/data.json')
+
+   return {
+      props: {
+        data: tourist_sites,
+      }
+   }
+}
