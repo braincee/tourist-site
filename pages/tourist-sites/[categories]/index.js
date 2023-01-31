@@ -8,7 +8,7 @@ const Pages = ({data, pageName}) => {
         <h1>{pageName}</h1>
         <div>
         {data.map((t) => (
-          <Link key={t.id} href={`/tourist-sites/${t.city}/${t.id}`} passHref>
+          <Link key={t.id} href={`/tourist-sites/${t.region}/${t.id}`} passHref>
             <Image width={300} height={300} alt={t.id} src={t.image}/>
             <h2>{t.title}</h2>
             <p>{t.description}</p>
