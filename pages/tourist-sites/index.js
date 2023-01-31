@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Tourists = ({data}) => {
   return (
@@ -7,10 +8,10 @@ const Tourists = ({data}) => {
         <h1>Tourist Site Pages</h1>
         <div>
          {data.map((t) => (
-            <a key={t.id} href={`/tourist-sites/${t.id}`}>
+            <Link key={t.id} href={`/tourist-sites/${t.id}`} passHref>
                <Image src={t.image} alt={t.image} width={300} height={300}/>
                <h2>{t.title}</h2>
-            </a>
+            </Link>
          ))}
         </div>
     </div>
