@@ -1,0 +1,44 @@
+
+header {
+  height: 300px;
+  padding: 20px;
+  background: linear-gradient(200deg, rgb(228, 228, 119), rgb(235, 131, 131), rgb(161, 240, 161), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  width: 30%;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 15px;
+}
+
+li {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+main {
+  
+}
+
+footer {
+  background-color: rgb(22, 21, 21);
+  color: antiquewhite;
+  padding: 10px;
+  text-align: center;
+}
