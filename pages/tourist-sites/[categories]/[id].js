@@ -5,9 +5,9 @@ const TouristPage = ({data}) => {
   
   return (
     <div>
-        <Image src={data.image} width={600} height={600} alt={data.title}/>
+        <Image src={data.image} width={1000} height={600} alt={data.title}/>
         <h1>{data.title}</h1>
-        <p>{data.description}</p>
+        <p className='description'>{data.description}</p>
     </div>
   )
 }
