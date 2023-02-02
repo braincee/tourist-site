@@ -1,17 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
 
-header {
+
+
+.navbar {
+  position: 'sticky';
   height: 300px;
-  padding: 20px;
+  z-index: 1;
+  top: 0;
   background: linear-gradient(200deg, rgb(228, 228, 119), rgb(235, 131, 131), rgb(161, 240, 161), transparent);
+}
+
+ .top {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.right-nav {
+  font-family: 'Unbounded', cursive;
+}
+
+.right-nav li a {
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.right-nav li a.active {
+  height: 100%;
+  border-bottom: 1px solid rgb(172, 149, 146);
+}
+
+
 h1 {
   width: 30%;
   font-size: 40px;
   text-transform: uppercase;
+  font-family: 'Itim', cursive;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Itim', cursive;
 }
 
 ul {
@@ -33,7 +71,65 @@ li {
 }
 
 main {
-  
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 80px 30px;
+  min-height: 483px;
+  top: 0;
+}
+
+.home-body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.image {
+  border-radius: 5px;
+  border: 1px solid salmon;
+}
+
+.image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 0.5s ease-in;
+  }
+
+.card {
+ display: flex;
+ flex-direction: row;
+ gap: 50px;
+ justify-content: center;
+}
+
+.home-card {
+  display: flex;
+  gap: 50px;
+}
+
+.home-card:nth-child(odd) {
+  direction: rtl;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.description {
+  margin: 18px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 25px;
+}
+.card:nth-child(odd) {
+  direction: rtl;
+}
+
+.content {
+  width: 50%;
 }
 
 footer {
@@ -42,3 +138,15 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+.tourist-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: auto;
+}
+
+.about-us {
+  display: flex;
+}
+
