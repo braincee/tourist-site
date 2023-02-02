@@ -1,10 +1,13 @@
 import React from 'react'
+import Logo from '../public/image/ghana-map.png'
+import Image from 'next/image'
 
 const AboutUS = () => {
   return (
-    <div>
-        <h1>Tourist Sties in Ghana</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+    <div className='about-us'>
+      <div><Image src={Logo} width={200} height={200} alt="ghana-map" /></div>
+      <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
         numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
         optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
@@ -25,6 +28,7 @@ const AboutUS = () => {
         modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
         totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
         quasi aliquam eligendi, placeat qui corporis!</p>
+      </div>
     </div>
   )
 }
