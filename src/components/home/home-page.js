@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HomePage = ({data}) => {
     return (
-        <div className="home-body">
+        <div className="main-body">
           <h2>REGIONS IN GHANA</h2>
         {data.map((t) => (
           <Link key={t.id} href={`/tourist-sites/${t.id}`} passHref className="home-card">
@@ -18,10 +18,9 @@ const HomePage = ({data}) => {
                </ul>
             </div>
           </Link>
-    
         ))}
       </div>
     );
 }
 
-export default HomePage
+export default HomePage;
