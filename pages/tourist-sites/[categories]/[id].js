@@ -4,10 +4,14 @@ import Image from 'next/image'
 const TouristPage = ({data}) => {
   
   return (
-    <div>
-        <Image src={data.image} width={600} height={600} alt={data.title}/>
-        <h1>{data.title}</h1>
-        <p>{data.description}</p>
+    <div className='single-page'>
+        <div>
+          <Image src={data.image} width={700} height={400} alt={data.title}/>
+        </div>
+        <div>
+          <h2>{data.title}</h2>
+          <p className='description'>{data.description}</p>
+        </div>
     </div>
   )
 }
