@@ -1,20 +1,7 @@
+import SinglePage from '@/src/components/tourist-sites/SinglePage';
 import React from 'react'
-import Image from 'next/image'
 
-const TouristPage = ({data}) => {
-  
-  return (
-    <div className='single-page'>
-        <div>
-          <Image src={data.image} width={700} height={400} alt={data.title}/>
-        </div>
-        <div>
-          <h2>{data.title}</h2>
-          <p className='description'>{data.description}</p>
-        </div>
-    </div>
-  )
-}
+const TouristPage = ({data}) => <SinglePage data={data}/>
 
 export default TouristPage
 

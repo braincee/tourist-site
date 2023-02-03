@@ -154,6 +154,42 @@ footer {
   padding: 100px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Unbounded', cursive;
+  font-size: 20px;
+}
+
+.form input {
+  height: 40px;
+  min-width: 400px;
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid saddlebrown;
+  font-size: 20px;
+}
+
+.form button {
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  border: 1px solid rgb(136, 133, 133);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  background: #cff7cf;
+}
+
+.form button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: transform 0.5s ease-in;
+  background: #9af59a;
+}
+
 @media (max-width: 400px) {
   .home-card {
     display: flex;
@@ -180,6 +216,7 @@ footer {
     padding: 10px;
   }
 }
+
 
 @media (max-width: 768px) {
   .home-card {
