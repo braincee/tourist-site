@@ -5,17 +5,18 @@
 
 
 .navbar {
-  position: 'sticky';
+  position: relative;
+  width: 100%;
   height: 300px;
   z-index: 1;
   top: 0;
-  background: linear-gradient(200deg, rgb(228, 228, 119), rgb(235, 131, 131), rgb(161, 240, 161), transparent);
+  background: linear-gradient(180deg, rgb(235, 131, 131), rgb(228, 228, 119), rgb(161, 240, 161), transparent);
 }
 
  .top {
-  width: 100%;
-  max-width: 1250px;
-  margin: auto;
+  // width: 100%;
+  // max-width: 1250px;
+  // margin: auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -70,18 +71,22 @@ li {
   align-content: center;
 }
 
-main {
+.main-body {
   width: 100%;
   max-width: 1250px;
   margin: auto;
   padding: 80px 30px;
   min-height: 483px;
-  top: 0;
-}
-
-.home-body {
   display: flex;
   flex-direction: column;
+  gap: 50px;
+}
+
+.single-page {
+  display: flex;
+  margin: auto;
+  padding: 100px;
+  min-height: 483px;
   gap: 50px;
 }
 
@@ -90,11 +95,15 @@ main {
   border: 1px solid salmon;
 }
 
-.image:hover {
+.main-body img {
+  border-radius: 5px;
+}
+
+.main-body img:hover {
   transform: scale(1.1);
   cursor: pointer;
   transition: transform 0.5s ease-in;
-  }
+}
 
 .card {
  display: flex;
@@ -139,14 +148,130 @@ footer {
   text-align: center;
 }
 
-.tourist-pages {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  margin: auto;
-}
-
 .about-us {
   display: flex;
+  min-height: 483px;
+  padding: 100px;
 }
 
+@media (max-width: 400px) {
+  .home-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .main-body img{
+    position: relative;
+    width: 300px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    padding: 20px;
+  }
+
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-body img {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 500px;
+  }
+
+  .single-page img {
+    width: 600px;
+    display: flex;
+    margin: auto;
+    height: 300px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .home-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    padding: 20px;
+  }
+
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-body img {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 500px;
+  }
+
+  .single-page img {
+    width: 600px;
+    display: flex;
+    margin: auto;
+    height: 300px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+}
