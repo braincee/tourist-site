@@ -5,8 +5,7 @@ import Image from 'next/image'
 const AboutUS = () => {
   return (
     <div className='about-us'>
-      <div><Image src={Logo} width={200} height={200} alt="ghana-map" /></div>
-      <div>
+      <p style={{ float: 'right', margin: '0 0 10px 10px'}}><Image src={Logo} width={200} height={200} alt="ghana-map" /></p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
         numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
@@ -28,7 +27,6 @@ const AboutUS = () => {
         modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
         totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
         quasi aliquam eligendi, placeat qui corporis!</p>
-      </div>
     </div>
   )
 }
