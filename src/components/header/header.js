@@ -1,23 +1,46 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const Header = () => {
+const Navbar = () => {
+
+  const router = useRouter();
+
+  const checkActive = (route) => {
+    return router.pathname === route ? true : false;
+  };
+
+
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY >= 90) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  }
+ 
+
   return (
-       <header> 
+        <div className="navbar"> 
+        <div className='top'>
         <div className="topNav">
-          <Image width={100} height={100} src={'/image/tourist-logo.png'} alt='logo'/>
+          <Image width={200} height={100} src={'/image/ghanalogo.png'} alt='logo'/>
          <nav>
-          <ul>
-            <li><Link href='/' passHref>Home</Link></li>
-            <li><Link href='/tourist-sites' passHref>Tourists</Link></li>
-            <li><Link href='/about-us' passHref>About Us</Link></li>
+          <ul className='right-nav'>
+            <li><Link href='/' passHref className={checkActive('/') ? 'active' : ''}>Home</Link></li>
+            <li><Link href='/tourist-sites' className={checkActive('/tourist-sites') ? 'active' : ''}passHref>Cities</Link></li>
+            <li><Link href='/about-us' className={checkActive('/about-us') ? 'active' : ''}passHref>History</Link></li>
           </ul>
         </nav>
         </div>
         <h1>Tourist Attractions in Ghana</h1>
-      </header>
+        </div>
+      </div>
   )
 }
 
-export default Header
+export default Navbar
