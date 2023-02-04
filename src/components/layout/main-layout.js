@@ -5,7 +5,7 @@ import Navbar from '../header/header'
 const Layout = ({ children }) => {
   return (
     <>
-     <Navbar />
+    <Navbar />
       {children}
      <Footer />
     </>

@@ -19,7 +19,7 @@ const SinglePage = ({ data }) => {
             <form onSubmit={onSubmit} className='form'>
              <label>Buy Your Tickets Here!</label>
              <input type="email" id="email" placeholder='Enter your email'/>
-             <button type='button'>Submit</button>
+             <button type='submit'>Submit</button>
             </form>
         </div>
         </div>
