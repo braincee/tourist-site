@@ -5,28 +5,26 @@ import Image from 'next/image'
 const AboutUS = () => {
   return (
     <div className='about-us'>
-      <p style={{ float: 'right', margin: '0 0 10px 10px'}}><Image src={Logo} width={200} height={200} alt="ghana-map" /></p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-        tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-        quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
-        sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-        recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
-        minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
-        quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur 
-        fugiat, temporibus enim commodi iusto libero magni deleniti quod quam 
-        consequuntur! Commodi minima excepturi repudiandae velit hic maxime
-        doloremque. Quaerat provident commodi consectetur veniam similique ad 
-        earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo 
-        fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore 
-        suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
-        modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
-        totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
-        quasi aliquam eligendi, placeat qui corporis!</p>
+      <p style={{ float: 'left', margin: '0 0 10px 10px'}}><Image src={Logo} width={200} height={200} alt="ghana-map" /></p>
+      <p>The Republic of Ghana is named after the medieval West African Ghana Empire.
+        The empire became known in Europe and Arabia as the Ghana Empire after the title of its Emperor, 
+        the Ghana. The empire appears to have broken up following the 1076 conquest by the Almoravid General Abu-Bakr 
+        Ibn-Umar. A reduced kingdom continued to exist after Almoravid rule ended, and the kingdom was later incorporated 
+        into subsequent Sahelian empires, such as the Mali Empire several centuries later. Geographically, the ancient 
+        Ghana Empire was approximately 500 miles (800 km) north and west of the modern state of Ghana, and controlled 
+        territories in the area of the Sénégal River and east towards the Niger rivers, in modern Senegal, Mauritania 
+        and Mali. In central Sub-Saharan Africa, agricultural expansion marked the period before 500 AD. Farming 
+        began earliest on the southern tips of the Sahara, eventually giving rise to village settlements.Toward the end 
+        of the classical era, larger regional kingdoms had formed in West Africa, one of which was the Kingdom of Ghana, 
+        north of what is today the nation of Ghana. Before its fall at the beginning of the 10th century, Akans 
+        migrated southward and founded several nation-states around their matriclans, including the first empire of 
+        Bono state founded in the 11th century and for which the Brong-Ahafo (Bono Ahafo) region is named. The Mole-Dagbon
+         people, who founded the earliest centralised political kingdoms of Ghana, migrated from Lake Chad to present day 
+         Ghana. Later, Akan ethnic groups such as the Ashanti, Akwamu, Akyem, Fante state and others are thought to 
+         possibly have roots in the original Bono state settlement at Bono Manso. The Ashanti kingdom's government 
+         operated first as a loose network and eventually as a centralized empire-kingdom with an advanced, highly 
+         specialized bureaucracy centred on the capital Kumasi.
+         </p>
     </div>
   )
 }
