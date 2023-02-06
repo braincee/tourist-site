@@ -84,6 +84,10 @@ li {
   gap: 50px;
 }
 
+.single-page img {
+  border-radius: 5px;
+}
+
 .image {
   border-radius: 5px;
   border: 1px solid salmon;
@@ -157,6 +161,12 @@ footer {
     flex-direction: column;
   }
 
+  .navbar img {
+   width: 50px;
+   height: 20px;
+   margin-bottom: 20px;
+  }
+
   h1 {
     font-size: 30px;
   }
@@ -176,10 +186,21 @@ footer {
     flex-direction: column;
     padding: 10px;
   }
+
+  .single-page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .single-page img {
+    width: 350px;
+  }
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .home-card {
     display: flex;
     flex-direction: column;
@@ -228,14 +249,20 @@ footer {
   .topNav img {
     width: 80px;
     height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .single-page {
+    display: flex;
+    flex-direction: column;
   }
 
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .home-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   h1 {
@@ -270,7 +297,7 @@ footer {
 
   .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .about-us {

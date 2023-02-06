@@ -10,20 +10,7 @@ const Navbar = () => {
   const checkActive = (route) => {
     return router.pathname === route ? true : false;
   };
-
-
-  if (typeof window !== 'undefined') {
-    window.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY >= 90) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-  }
  
-
   return (
         <div className="navbar"> 
         <div className='top'>
