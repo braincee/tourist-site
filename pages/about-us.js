@@ -5,7 +5,12 @@ import Image from 'next/image'
 const AboutUS = () => {
   return (
     <div className='about-us'>
-      <p style={{ float: 'left', margin: '0 0 10px 10px'}}><Image src={Logo} width={200} height={200} alt="ghana-map" /></p>
+      <div>
+        <h2>History About Ghana</h2>
+      </div>
+      <div>
+        <div>
+        <p style={{ float: 'left', margin: '0 0 10px 10px'}}><Image src={Logo} width={200} height={200} alt="ghana-map" /></p>
       <p>The Republic of Ghana is named after the medieval West African Ghana Empire.
         The empire became known in Europe and Arabia as the Ghana Empire after the title of its Emperor, 
         the Ghana. The empire appears to have broken up following the 1076 conquest by the Almoravid General Abu-Bakr 
@@ -25,7 +30,10 @@ const AboutUS = () => {
          operated first as a loose network and eventually as a centralized empire-kingdom with an advanced, highly 
          specialized bureaucracy centred on the capital Kumasi.
          </p>
+        </div>
     </div>
+    </div>
+    
   )
 }
 
