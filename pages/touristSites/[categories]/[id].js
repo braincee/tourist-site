@@ -1,18 +1,22 @@
 import React from 'react'
 import Image from 'next/image'
 
-const TouristPages = ({data}) => {
+const TouristPages = ({ data }) => {
  return (
   <div className='single-page'>
-        <div>
-          <Image src={data.image} width={700} height={400} alt={data.title} />
+    {data.map((t) => (
+      <div>
+       <div>
+        <Image src={t.image} width={700} height={400} alt={t.title} />
         </div>
         <div>
-          <h2>{data.title}</h2>
-          <p className='description'>{data.description}</p>
+        <h2>{t.title}</h2>
+        <p className='description'>{t.description}</p>
         </div>
-        </div>
- )
+      </div>
+    ))}
+    </div>
+ ) 
 }
 
 export default TouristPages
