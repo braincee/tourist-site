@@ -19,7 +19,7 @@ const Navbar = () => {
          <nav>
           <ul className='right-nav'>
             <li><Link href='/' passHref className={checkActive('/') ? 'active' : ''}>Home</Link></li>
-            <li><Link href='/tourist-sites' className={checkActive('/tourist-sites') ? 'active' : ''}passHref>Cities</Link></li>
+            <li><Link href='/touristSites' className={checkActive('/touristSites') ? 'active' : ''}passHref>Cities</Link></li>
             <li><Link href='/about-us' className={checkActive('/about-us') ? 'active' : ''}passHref>History</Link></li>
           </ul>
         </nav>
