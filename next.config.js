@@ -9,7 +9,8 @@ const nextConfig = {
     'media.timeout.com', 'touringghana.com', 'viewghana.com', 'upload.wikimedia.org', 'garlandmag.com',
     'www.nationalparks.africa', 'scontent.facc1-1.fna.fbcdn.net', 'braperucci.africa', 'farm3.static.flickr.com',
     'www.graphic.com.gh', 'www.wantedinafrica.com', 'www.gacl.com.gh', 'cdn.ghanaweb.com', 'scontent.facc6-1.fna.fbcdn.net',
-    'upload.wikimedia.org', 'berockventures.com', 'scontent.facc6-1.fna.fbcdn.net', 'ghana.for91days.com'
+    'upload.wikimedia.org', 'berockventures.com', 'scontent.facc6-1.fna.fbcdn.net', 'ghana.for91days.com',
+    'i0.wp.com/mrpocu.com'
   ],
   },
 };
