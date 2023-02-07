@@ -6,7 +6,7 @@ const HomePage = ({data}) => {
         <div className="main-body">
           <h2>REGIONS IN GHANA</h2>
         {data.map((t) => (
-          <Link key={t.id} href={`/tourist-sites/${t.id}`} passHref className="home-card">
+          <Link key={t.id} href={`/touristSites/${t.id}`} passHref className="home-card">
             <div className="image"><Image width={500} height={300} alt={t.id} src={t.image}/></div>
             <div><h2>{t.title}</h2><p className="description">{t.description}</p>
             <ul className="list">
