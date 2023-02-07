@@ -6,7 +6,7 @@ const Pages = ({ data, pageName }) => {
   return (
     <div className='main-body tourist-pages'>
     <h2>Tourist Sites in {pageName}</h2>
-      <Link key={data.id} href={`/tourist-sites/${data.region}/${data.id}`} passHref className='card'>
+      <Link key={data.id} href={`/touristSites/${data.region}/${data.id}`} passHref className='card'>
         <div><Image width={500} height={300} alt={data.id} src={data.image}/></div>
         <div>
          <h2>{data.title}</h2>
