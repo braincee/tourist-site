@@ -4,18 +4,14 @@ import Image from 'next/image'
 const TouristPages = ({ data }) => {
  return (
   <div className='single-page'>
-    {data.map((t) => (
-      <div key={t.id}>
        <div>
-        <Image src={t.image} width={700} height={400} alt={t.title} />
+        <Image src={data.image} width={700} height={400} alt={data.title} />
         </div>
         <div>
-        <h2>{t.title}</h2>
-        <p className='description'>{t.description}</p>
+        <h2>{data.title}</h2>
+        <p className='description'>{data.description}</p>
         </div>
       </div>
-    ))}
-    </div>
  ) 
 }
 
