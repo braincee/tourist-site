@@ -1,5 +1,5 @@
 import React from 'react';
-import TouristPages from '@/src/components/tourist-sites/TouristPages';
+import TouristPages from '@/src/components/touristSites/TouristPages';
 
 const Tourists = ({data}) => {
   return (

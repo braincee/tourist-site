@@ -1,7 +1,7 @@
-import SinglePage from '@/src/components/tourist-sites/SinglePage';
 import React from 'react'
+import SinglePage from '@/src/components/touristSites/SinglePage';
 
-const SinglePages = ({data}) => {
+const TouristPages = ({data}) => {
  return (
   <div>
     <SinglePage data={data}/>
@@ -9,7 +9,7 @@ const SinglePages = ({data}) => {
  )
 }
 
-export default SinglePages
+export default TouristPages
 
 export async function getStaticPaths() {
   const data = await import('/data/data.json');

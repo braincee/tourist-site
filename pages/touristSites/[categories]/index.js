@@ -1,5 +1,5 @@
 import React from 'react'
-import TouristSite from '@/src/components/tourist-sites/TouristSite'
+import TouristSite from '@/src/components/touristSites/TouristSite'
 
 const Pages = ({data, pageName}) => {
   return (
