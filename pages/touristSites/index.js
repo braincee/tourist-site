@@ -7,17 +7,15 @@ const Tourists = ({ data }) => {
     <div>
        <div className='main-body tourist-pages'>
       <h2>Cities in Ghana</h2>
-        {data.map((t) => (
-            <Link key={t.id} href={`/touristSites/${t.id}`} passHref className='card'>
-                <div><Image src={t.image} alt={t.image} width={500} height={350}/></div>
-                <div><h2>{t.title}</h2><p className='description'>{t.description}</p>
+            <Link key={data.id} href={`/touristSites/${data.id}`} passHref className='card'>
+                <div><Image src={data.image} alt={data.image} width={500} height={350}/></div>
+                <div><h2>{data.title}</h2><p className='description'>{data.description}</p>
                 <ul className='list'>
-                   <li>District: {t.district}</li>
-                   <li>Population: {t.population}</li>
+                   <li>District: {data.district}</li>
+                   <li>Population: {data.population}</li>
                 </ul>
                 </div>
             </Link>
-         ))}
     </div>
     </div>
   )
