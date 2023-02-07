@@ -1,9 +1,21 @@
-import SinglePage from '@/src/components/tourist-sites/SinglePage';
 import React from 'react'
+import Image from 'next/image'
 
-const TouristPage = ({data}) => <SinglePage data={data}/>
+const TouristPages = ({data}) => {
+ return (
+  <div className='single-page'>
+        <div>
+          <Image src={data.image} width={700} height={400} alt={data.title} />
+        </div>
+        <div>
+          <h2>{data.title}</h2>
+          <p className='description'>{data.description}</p>
+        </div>
+        </div>
+ )
+}
 
-export default TouristPage
+export default TouristPages
 
 export async function getStaticPaths() {
   const data = await import('/data/data.json');

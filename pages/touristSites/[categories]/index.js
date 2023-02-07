@@ -1,7 +1,21 @@
 import React from 'react'
-import TouristSite from '@/src/components/tourist-sites/TouristSite'
+import Link from 'next/link'
+import Image from 'next/image'
 
-const Pages = ({data, pageName}) => <TouristSite data={data} pageName={pageName} />
+const Pages = ({ data, pageName }) => {
+  return (
+    <div className='main-body tourist-pages'>
+    <h2>Tourist Sites in {pageName}</h2>
+      <Link key={data.id} href={`/touristSites/${data.region}/${data.id}`} passHref className='card'>
+        <div><Image width={500} height={300} alt={data.id} src={data.image}/></div>
+        <div>
+         <h2>{data.title}</h2>
+         <p className='description'>{data.description}</p>
+        </div>
+      </Link>
+  </div>
+  )
+}
 
 export default Pages
 
@@ -17,7 +31,7 @@ export async function getStaticPaths() {
 
  return {
   paths: allPaths,
-  fallback: true,
+  fallback: false,
  }
 }
 
