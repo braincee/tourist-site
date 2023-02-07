@@ -5,7 +5,7 @@ const TouristPages = ({ data }) => {
  return (
   <div className='single-page'>
     {data.map((t) => (
-      <div>
+      <div key={t.id}>
        <div>
         <Image src={t.image} width={700} height={400} alt={t.title} />
         </div>
