@@ -1,7 +1,7 @@
 import SinglePage from '@/src/components/tourist-sites/SinglePage';
 import React from 'react'
 
-const SInglePages = ({data}) => {
+const SinglePages = ({data}) => {
  return (
   <div>
     <SinglePage data={data}/>
