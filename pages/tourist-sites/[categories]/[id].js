@@ -1,9 +1,9 @@
 import SinglePage from '@/src/components/tourist-sites/SinglePage';
 import React from 'react'
 
-const TouristPage = ({data}) => <SinglePage data={data}/>
+const SinglePage = ({data}) => <SinglePage data={data}/>
 
-export default TouristPage
+export default SinglePage
 
 export async function getStaticPaths() {
   const data = await import('/data/data.json');
