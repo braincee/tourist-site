@@ -1,7 +1,13 @@
 import React from 'react'
 import TouristSite from '@/src/components/tourist-sites/TouristSite'
 
-const Pages = ({data, pageName}) => <TouristSite data={data} pageName={pageName} />
+const Pages = ({data, pageName}) => {
+  return (
+    <div>
+      <TouristSite data={data} pageName={pageName} />
+    </div>
+  )
+}
 
 export default Pages
 
