@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
 
 .navbar {
   width: 100%;
-  height: 300px;
+  height: 76px;
+  position: fixed;
+  z-index: 100;
   background: linear-gradient(180deg, rgb(235, 131, 131), rgb(228, 228, 119), rgb(161, 240, 161), transparent);
 }
 
@@ -28,9 +31,56 @@
   color: black;
 }
 
+.right-nav li a:hover {
+  border-bottom: 1px solid rgb(65, 212, 72);
+}
+
 .right-nav li a.active {
+  border-bottom: 1px solid rgb(65, 212, 72);
+}
+
+.drawer {
+  display: flex;
+  position: fixed;
   height: 100%;
-  border-bottom: 1px solid rgb(172, 149, 146);
+  width: 100%;
+  top: 0;
+  left: -100%;
+  z-index: 200;
+  flex-direction: column;
+  gap: 100px;
+  background: linear-gradient(180deg, rgb(235, 131, 131), rgb(228, 228, 119), rgb(161, 240, 161), transparent);
+  transition: 0.5s ease-in;
+}
+
+.drawer-1 {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  flex-direction: column;
+  gap: 100px;
+  background: linear-gradient(180deg, rgb(235, 131, 131), rgb(228, 228, 119), rgb(161, 240, 161), transparent);
+  transition: 0.5s ease-in;
+}
+
+.menu-links {
+ display: flex;
+ flex-direction: column;
+ gap: 50px;
+ justify-content: center;
+ align-items: center;
+ font-family: 'Unbounded', cursive;
+}
+
+.close {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
 }
 
 
@@ -76,6 +126,26 @@ li {
   gap: 50px;
 }
 
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, rgb(235, 131, 131), rgb(228, 228, 119), rgb(161, 240, 161), transparent);
+}
+
+button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: transform 0.1s ease-in;
+}
+
+.image {
+  display: flex;
+}
+
 .single-page {
   display: flex;
   margin: auto;
@@ -86,11 +156,6 @@ li {
 
 .single-page img {
   border-radius: 5px;
-}
-
-.image {
-  border-radius: 5px;
-  border: 1px solid salmon;
 }
 
 .main-body img {
@@ -140,19 +205,40 @@ li {
 }
 
 footer {
-  background-color: rgb(22, 21, 21);
-  color: antiquewhite;
+  background: linear-gradient(180deg, rgb(235, 131, 131), rgb(228, 228, 119), rgb(161, 240, 161), transparent);;
+  color: rgb(19, 18, 17);
   padding: 10px;
+  font-family: 'Pacifico', cursive;
   text-align: center;
 }
 
 .about-us {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 50px;
   min-height: 483px;
   padding: 100px;
   font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 370px) {
+  .right-nav li {
+    font-size: 3px;
+    font-weight: 200;
+  }
+  .right-nav {
+    display: none;
+  }
+
+  .about-us {
+    padding: 10px;
+    padding-top: 100px;
+  }
+
+  .about-us img {
+    width: 150px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -161,14 +247,13 @@ footer {
     flex-direction: column;
   }
 
-  .navbar img {
-   width: 50px;
-   height: 20px;
-   margin-bottom: 20px;
-  }
-
   h1 {
     font-size: 30px;
+  }
+
+  .main-body {
+    padding: 10px;
+    padding-top: 100px;
   }
 
   .main-body img{
@@ -185,17 +270,37 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-top: 100px;
   }
 
   .single-page {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    padding-top: 120px;
     gap: 20px;
   }
 
   .single-page img {
     width: 350px;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  .topNav img {
+    width: 170px;
+    height: 50px;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-us img {
+    width: 150px;
   }
 }
 
@@ -246,15 +351,13 @@ footer {
     flex-direction: column;
   }
 
-  .topNav img {
-    width: 80px;
-    height: 40px;
-    margin-bottom: 21px;
-  }
-
   .single-page {
     display: flex;
     flex-direction: column;
+  }
+
+  .menu {
+    display: none;
   }
 
 }
@@ -303,5 +406,9 @@ footer {
   .about-us {
     display: flex;
     flex-direction: column;
+  }
+
+  .menu {
+    display: none;
   }
 }
