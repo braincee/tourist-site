@@ -215,7 +215,12 @@ footer {
   gap: 50px;
   min-height: 483px;
   padding: 100px;
+  line-height: 30px;
   font-family: 'Poppins', sans-serif;
+}
+
+.about-us button {
+  margin: 30px;
 }
 
 @media (max-width: 370px) {
