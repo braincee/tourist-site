@@ -6,8 +6,8 @@ const HomePage = ({data}) => {
         <div className="main-body">
           <h2>REGIONS IN GHANA</h2>
         {data.map((t) => (
-          <Link key={t.id} href={`/touristSites/${t.id}`} passHref className="home-card">
-            <div className="image"><Image width={500} height={300} alt={t.id} src={t.image}/></div>
+          <div key={t.id} className="home-card">
+             <div className="image"><Image width={500} height={300} alt={t.id} src={t.image}/></div>
             <div><h2>{t.title}</h2><p className="description">{t.description}</p>
             <ul className="list">
                 <li>Area: {t.area}</li>
@@ -16,8 +16,9 @@ const HomePage = ({data}) => {
                 <li>Population: {t.population}</li>
                 <li>Language: {t.language}</li>
                </ul>
+               <Link href={`/touristSites/${t.id}`}><button>{t.title}</button></Link>  
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     );
