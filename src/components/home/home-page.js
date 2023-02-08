@@ -3,7 +3,8 @@ import Image from "next/image";
 
 const HomePage = ({data}) => {
     return (
-        <div className="main-body">
+      <div>
+         <div className="main-body">
           <h2>REGIONS IN GHANA</h2>
         {data.map((t) => (
           <div key={t.id} className="home-card">
@@ -20,6 +21,7 @@ const HomePage = ({data}) => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     );
 }
